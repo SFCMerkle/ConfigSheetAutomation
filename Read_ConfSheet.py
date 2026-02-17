@@ -15,4 +15,6 @@ last_sheet = Config_file[Config_file.sheetnames[-1]]
 
 print(f"S2, Version: {last_sheet['S2'].value}")
 
+# comment test 
+print("This is a test comment to check the functionality of git") 
 
