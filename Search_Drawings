@@ -1,0 +1,25 @@
+import os
+
+def search_file(title, search_path):
+    """Search for a file by title in the specified directory and subdirectories."""
+    found = False
+    
+    for root, dirs, files in os.walk(search_path):
+        for file in files:
+            if title.lower() in file.lower():
+                file_path = os.path.join(root, file)
+                print(f"Found: {file_path}")
+                found = True
+    
+    if not found:
+        print("file not found")
+
+# Get title from user
+title = input("Enter the file title to search: ")
+
+# Search path
+search_path = r"N:\SFC Engineering\Switzerland\FLOW"
+#search_path = search_path.replace("\\", "/")  # Replace backslashes with forward slashes    
+
+# Perform search
+search_file(title, search_path) 
