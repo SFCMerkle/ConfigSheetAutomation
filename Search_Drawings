@@ -18,7 +18,7 @@ def search_file(title, search_path):
 title = input("Enter the file title to search: ")
 
 # Search path
-search_path = r"N:\SFC Engineering\Switzerland\FLOW"
+search_path = r"N:\SFC Engineering\Switzerland\FLOW\2 Zeichnungsarchiv"
 #search_path = search_path.replace("\\", "/")  # Replace backslashes with forward slashes    
 
 # Perform search
